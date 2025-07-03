@@ -1,6 +1,7 @@
 // Unit tests for authentication and API client
 use gsheets_mcp::auth_manager::{AuthMethod, AuthManager};
 use gsheets_mcp::config::AppConfig;
+use std::sync::Arc;
 
 #[test]
 fn test_auth_method_from_str() {
@@ -24,5 +25,7 @@ async fn test_auth_manager_new_service_account_missing_key() {
     let result = AuthManager::new(&config).await;
     assert!(result.is_err());
 }
+
+// Removed handler logic tests for get/set sheet data (moved to src/tests/mod.rs)
 
 // Add more tests for GoogleApiClient as needed, using mocks or stubs.

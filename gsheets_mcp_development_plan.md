@@ -52,10 +52,10 @@ This plan details the phased, robust, and maximally complete development of the 
 
 ### Phase 4: Sheets Operations & Endpoints
 **Task Swarm 4.1: Endpoint Implementations (Parallelizable)**
-- [ ] 4.1.1 Implement endpoints: list/create spreadsheets
-- [ ] 4.1.2 Implement endpoints: get/set sheet data
-- [ ] 4.1.3 Implement batch operations
-- [ ] 4.1.4 Implement sharing, metadata, and Drive integration
+- [x] 4.1.1 Implement endpoints: list/create spreadsheets <!-- Complete: HTTP, stdio, and SEE endpoints for list/create are implemented and tested. -->
+- [x] 4.1.2 Implement endpoints: get/set sheet data <!-- Complete: HTTP, stdio, and SEE endpoints for get/set sheet data are implemented and tested. -->
+- [x] 4.1.3 Implement batch operations <!-- Complete: HTTP, stdio, and SEE endpoints for batch get/set are implemented and tested. -->
+- [/] 4.1.4 Implement sharing, metadata, and Drive integration <!-- Drive file listing and metadata endpoints are complete and tested. Sharing/permissions endpoints in progress. -->
 
 **Task Swarm 4.2: Error Handling, Logging, and Integration Tests (Parallelizable)**
 - [ ] 4.2.1 Robust error handling for all endpoints

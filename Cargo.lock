@@ -601,7 +601,47 @@ dependencies = [
  "tokio",
  "tower-service",
  "url 2.5.4",
- "yup-oauth2 9.0.0",
+ "yup-oauth2",
+]
+
+[[package]]
+name = "google-calendar3"
+version = "5.0.5+20240328"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6ac9bbbfb836b85f0dafb43de5b39837569c48df9a4f68e4bf63bf99795ddb4"
+dependencies = [
+ "anyhow",
+ "google-apis-common",
+ "http 0.2.12",
+ "hyper 0.14.32",
+ "hyper-rustls 0.25.0",
+ "itertools 0.10.5",
+ "mime",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tower-service",
+ "url 1.7.2",
+]
+
+[[package]]
+name = "google-docs1"
+version = "5.0.5+20240613"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fc84fbf2a2a71110eac9671bd5d922e675e134e8474b4b3c5ca6ac526a7460b3"
+dependencies = [
+ "anyhow",
+ "google-apis-common",
+ "http 0.2.12",
+ "hyper 0.14.32",
+ "hyper-rustls 0.25.0",
+ "itertools 0.13.0",
+ "mime",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tower-service",
+ "url 1.7.2",
 ]
 
 [[package]]
@@ -655,8 +695,12 @@ dependencies = [
  "config",
  "dotenv",
  "futures-util",
+ "google-calendar3",
+ "google-docs1",
  "google-drive3",
  "google-sheets4",
+ "hyper 0.14.32",
+ "hyper-rustls 0.24.2",
  "mockito",
  "reqwest",
  "serde",
@@ -666,7 +710,7 @@ dependencies = [
  "tokio-util",
  "tracing",
  "tracing-subscriber",
- "yup-oauth2 8.3.0",
+ "yup-oauth2",
 ]
 
 [[package]]
@@ -1103,6 +1147,15 @@ name = "itertools"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba291022dbbd398a455acf126c1e341954079855bc60dfdda641363bd6922569"
+dependencies = [
+ "either",
+]
+
+[[package]]
+name = "itertools"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186"
 dependencies = [
  "either",
 ]
@@ -3018,33 +3071,6 @@ dependencies = [
  "quote",
  "syn",
  "synstructure",
-]
-
-[[package]]
-name = "yup-oauth2"
-version = "8.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "364ca376b5c04d9b2be9693054e3e0d2d146b363819d0f9a10c6ee66e4c8406b"
-dependencies = [
- "anyhow",
- "async-trait",
- "base64 0.13.1",
- "futures",
- "http 0.2.12",
- "hyper 0.14.32",
- "hyper-rustls 0.24.2",
- "itertools 0.10.5",
- "log",
- "percent-encoding 2.3.1",
- "rustls 0.21.12",
- "rustls-pemfile 1.0.4",
- "seahash",
- "serde",
- "serde_json",
- "time",
- "tokio",
- "tower-service",
- "url 2.5.4",
 ]
 
 [[package]]
