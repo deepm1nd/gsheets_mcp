@@ -1,0 +1,24 @@
+[package]
+name = "gsheets_mcp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+thiserror = "1"
+anyhow = "1"
+config = "0.13"
+dotenv = "0.15"
+google-sheets4 = "=5.0.4"
+google-drive3 = "=5.0.4"
+yup-oauth2 = "=8.3.0"
+mockito = { version = "1", optional = true }
+base64 = "0.21"
+reqwest = { version = "0.11", features = ["blocking"] }
+tokio-util = "0.7"
+futures-util = "0.3.31"

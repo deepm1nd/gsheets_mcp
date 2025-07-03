@@ -1,0 +1,8 @@
+# Example configuration for filers_mcp
+
+[server]
+allowed_dirs = ["/srv/data", "/srv/shared"]
+log_level = "info"
+
+[network]
+listen_addr = "0.0.0.0:8080"
